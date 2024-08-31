@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Apply Comic Sans font */
+    background-color: #e0f7fa; /* Light blue background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title Container */
+.title-container {
+    text-align: center;
+    margin: 20px 0; /* Space between title and container */
+}
+
+h1 {
+    margin: 0; /* Remove default margin for h1 */
+}
+
+/* Container and Columns */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center container */
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Form Styles */
+form {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Form Elements */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Additional Styling for Specific Divs */
+#staleElementSection,
+#messageContainer,
+#resultContainer,
+#shadowDomContainer {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Dropdown Images Styling */
+#dropdownForm img {
+    max-width: 100px; /* Set max width for images in dropdown */
+    display: block; /* Ensure images are displayed properly */
+}
+
+/* Add styles for the new sections */
+#webTableSection, #frameSection {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#webTableSection h2, #frameSection h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+#sampleTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#sampleTable th, #sampleTable td {
+    padding: 10px;
+    text-align: left;
+}
+
+#sampleTable th {
+    background-color: #87ceeb;
+}
+
+#sampleTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Add styles for the new sections */
+#alertSection, #newTabSection {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#alertSection h2, #newTabSection h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}

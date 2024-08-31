@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Automation Practice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Title Container -->
+    <div class="title-container">
+        <h1>Test Automation Practice Site</h1>
+    </div>
+
+    <div class="container">
+        <!-- Column 1 -->
+        <div class="column">
+            <!-- Login Form -->
+            <form id="loginForm">
+                <h2>Login</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    
+                <button type="submit">Login</button>
+            </form>
+
+            <!-- Stale Element Section -->
+            <div id="staleElementSection">
+                <h2>Stale Element Example</h2>
+                <button id="updateButton">Click to Update Input</button>
+                <input type="text" id="delayedInput" placeholder="This input will change after 2 seconds">
+            </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="column">
+            <!-- Search Form -->
+            <form id="searchForm">
+                <h2>Search</h2>
+                <label for="search">Search:</label>
+                <input type="text" id="search" name="search" placeholder="Search for something...">
+    
+                <button type="submit">Search</button>
+            </form>
+
+            <!-- Result Container -->
+            <div id="resultContainer" class="hidden">
+                <h2>Search Results</h2>
+                <p id="resultText"></p>
+            </div>
+
+            <!-- Dropdown Input -->
+            <form id="dropdownForm">
+                <h2>Select an Image</h2>
+                <label for="images">Choose an image:</label>
+                <select id="images" name="images">
+                    <option value="image1" data-img-src="image1.jpg">Image 1</option>
+                    <option value="image2" data-img-src="image2.jpg">Image 2</option>
+                    <option value="image3" data-img-src="image3.jpg">Image 3</option>
+                </select>
+                <button type="button" id="showImage">Show Image</button>
+            </form>
+
+            <!-- Custom Element with Shadow DOM -->
+            <div id="shadowDomContainer">
+                <h2>Shadow DOM Input</h2>
+                <shadow-input></shadow-input>
+            </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="column">
+            <!-- Radio Button Group -->
+            <form id="radioForm">
+                <h2>Select an Option</h2>
+                <label>Choose your favorite:</label>
+                <div>
+                    <input type="radio" id="radio1" name="radioGroup" value="option1">
+                    <label for="radio1">Radio 1</label>
+                </div>
+                <div>
+                    <input type="radio" id="radio2" name="radioGroup" value="option2">
+                    <label for="radio2">Radio 2</label>
+                </div>
+                <div>
+                    <input type="radio" id="radio3" name="radioGroup" value="option3">
+                    <label for="radio3">Radio 3</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+
+            <!-- Textarea Input -->
+            <form id="textareaForm">
+                <h2>Leave a Comment</h2>
+                <label for="comments">Your Comment:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Enter your comment..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+
+            <!-- Message Container -->
+            <div id="messageContainer" class="hidden">
+                <h2>Message</h2>
+                <p id="messageText"></p>
+                <img id="selectedImage" src="" alt="Selected Image" style="max-width: 100%; display: none;">
+            </div>
+        </div>
+        <!-- Web Table Example -->
+        <div id="webTableSection">
+            <h2>Web Table Example</h2>
+            <table id="sampleTable" border="1">
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Row 1, Col 1</td>
+                        <td>Row 1, Col 2</td>
+                        <td>Row 1, Col 3</td>
+                    </tr>
+                    <tr>
+                        <td>Row 2, Col 1</td>
+                        <td>Row 2, Col 2</td>
+                        <td>Row 2, Col 3</td>
+                    </tr>
+                    <tr>
+                        <td>Row 3, Col 1</td>
+                        <td>Row 3, Col 2</td>
+                        <td>Row 3, Col 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Frame Example -->
+        <div id="frameSection">
+            <h2>Frame Example</h2>
+            <iframe id="sampleFrame" src="frameContent.html" width="100%" height="300px"></iframe>
+        </div>
+
+        <!-- Message from Frame -->
+        <div id="frameMessageContainer">
+            <h2>Message from Frame:</h2>
+            <p id="frameMessage">No message yet.</p>
+        </div>
+
+        <!-- JavaScript Alert Example -->
+        <div id="alertSection">
+            <h2>JavaScript Alert Example</h2>
+            <button id="alertButton">Click to Trigger Alert</button>
+        </div>
+
+        <!-- New Tab Example -->
+        <div id="newTabSection">
+            <h2>Open New Tab Example</h2>
+            <a href="https://www.example.com" target="_blank" id="newTabLink">Click to Open a New Tab</a>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

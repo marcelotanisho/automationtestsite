@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame Content</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #e0f7fa;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>This is an example of content inside an iframe.</h2>
+    <p>Automating interactions within an iframe is a common challenge in Selenium testing.</p>
+    <button id="insideFrameButton">Click Me!</button>
+
+    <script>
+        document.getElementById('insideFrameButton').addEventListener('click', function() {
+            parent.document.getElementById('frameMessage').innerText = 'Button inside iframe was clicked!';
+        });
+    </script>
+</body>
+</html>
